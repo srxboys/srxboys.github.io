@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[热更新方案]]></title>
+    <url>%2F2018%2F06%2F03%2F%E7%83%AD%E6%9B%B4%E6%96%B0%E6%96%B9%E6%A1%88%2F</url>
+    <content type="text"><![CDATA[热更新/热修复(调研的可能不全) 热更新 1、 Flutter 由于渲染的基础（gdi）是自己实现的，所以实现跨平台、性能优化、摆脱平台约束方面的裕度更大。从实际体验来看， Flutter 的性能比 RN 要高不少。优点可能是性能，但由于它完全自定义了一套 ui 系统，这也是它的限制。热更新可使用code-push。 2、 React-native (简称RN)是Facebook于2015年4月开源支持如下移动操作系统：iOS, Android,ubuntu phone os, Blackberry, Windows Phone(UWP), Palm WebOS, Bada 和 Symbian… 。 3、 Cordova 是贡献给Apache后的开源项目，是从PhoneGap中抽出的核心代码，是驱动PhoneGap的核心引擎。你可以把它们的关系想象成类似于Webkit和Google Chrome的关系 。支持如下移动操作系统：iOS, Android,ubuntu phone os, Blackberry, Windows Phone, Palm WebOS, Bada 和 Symbian。 4、 weex 阿里巴巴，一段时间后，创始人大部分离开，后补人员开发 incubator-weex。使用vue.js 支持html 、iOS 、Android。 5、动态库 可以做demo用，真实使用的时候会被苹果禁止。 第三方，有的需要付费(不多介绍了) 1、 Xamarin microsoft 2、 APICloud 是用Web语言去开发iOS和Android应用, 国内产品【柚子（北京）移动技术有限公司】。 3、 Phonegap 【需要翻墙】 原本由Nitobi公司开发，现在由Adobe拥有。 4、 Bizness Apps 【需要翻墙】 目前支持iOS（iPhone、 iPad）及Android平台，收费为每个平台39美元。【Businesses Made Easy】公司拥有。 5、 Intel XDK 前身是AppMobi XDK，是一款帮助开发者使用HTML5开发移动及Web应用的跨平台开发工具，intel公司拥有。 未开放 1、 DynamicCocoa 编译阶段入手，通过 clang 把 OC 代码编译成自己定制的 JS 格式，再动态下发去执行，做到原生开发，动态运行，主打动态添加功能，当然顺便把修 bug 也给支持了。准备在2017年初开源，但至今没有消息。 2、TPatch QQ空间终端开发团队，目前不开放。 3、OCScript 4、Hybrid 主流的Android平台包括PhoneGap，AppCan，appMobi，Titanium等， iOS 类似的 WebViewJavascriptBridge 停止更新 1、 ulua C# 2、 WaxPatch mmin18(个人) wax 后被Alibaba收购， 使用 Lua, 支持iOS 首先是 wax 已经多年不维护了，导致不支持一些 block/64 位等新特性，此外当时 wax 还有文档不足，测试不足，线程不安全，难以调试等坑。 热修复 1、 JSPatch bang 陈振焯 &nbsp;&nbsp; 访谈:http://www.infoq.com/cn/articles/jspatch-opensource 2、 rollout (需要翻墙)国外一个热补丁服务叫 rollout (http://rollout.io)。 它是一个服务平台，底层也是用 JS 调用和替换 OC 方法去实时修复 bug，不过它不是开源的，只能在这个平台上用，另外它的 JS 写法是比较复杂的，导致它不得不在平台上做一些便捷的功能，把一些常用的操作封装起来，减少使用者写代码。来源文章:https://www.cnblogs.com/bugly/p/5740812.html 3、 xLua 腾讯(好像 是对游戏类app 比较好些) 平时开发用c#，需要热更新时用lua来更新对应的函数 4、 MonoCross 5、 CodePush 是由微软提供的热更新服务。热更新可以使你绕过AppStore的审核机制，直接修改已经上架的应用。对于国内用户，我们也推荐由本网站提供的Pushy热更新服务，相比CodePush来说，提供了全中文的文档和技术支持，服务器部署在国内速度更快，还提供了全自动的差量更新方式，大幅节约更新流量，欢迎朋友们试用和反馈意见 意外资料 slua 【Unity3D and mono 】 作者文章：https://www.jianshu.com/p/481994e8b7df // Android java 微信Tinker 阿里 Andfix 腾讯的内部方案KKFix Qzone的超级补丁、 大众点评的nuwa、 百度金融的rocooFix, 饿了么的amigo 美团的robust]]></content>
+      <categories>
+        <category>React-Native</category>
+      </categories>
+      <tags>
+        <tag>iOS</tag>
+        <tag>Android</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[React Native Develop Tool]]></title>
+    <url>%2F2018%2F06%2F03%2FReact-Native-Develop-Tool%2F</url>
+    <content type="text"><![CDATA[React Native Develop Tool开发工具提供 自动补全、语法检查, 方便我们开发。1、Atom + Nuclide + watchman ](http://github.com/facebook/watchman) 12345(1)Atom 是github专门为程序员推出的一个跨平台文本编辑器。具有简洁和直观的图形用户界面，并有很多有趣的特点： 支持CSS，HTML，JavaScript等网页编程语言。它支持宏，自动完成分屏功能，集成了文件管理器。(1)`watchman`+ `flow` + `eslint` + `Yarn` 2、 webStorm 是jetbrains公司旗下一款JavaScript 开发工具。目前已经被广大中国JS开发者誉为“Web前端开发神器”、“最强大的HTML5编辑器”、“最智能的JavaScript IDE”等。与 IntelliJ IDEA同源，继承了IntelliJ IDEA强大的JS部分的功能。3、 Sublime Text 需要安装插件，才可进行预编译 123456# sublime插件ReactJS：支持React开发，代码提示，高亮显示Emmet：前端开发必备Terminal：在sublime中打开终端并定位到当前目录react-native-snippets：react native 的代码片段JsFormat：格式化js代码 4、VS Code（Visual Studio Code）123456# 添加RN开发插件React Native Tools：微软官方出的ReactNative插件,非常好用Reactjs code snippets：react的代码提示，如componentWillMount方法可以通过cwm直接获得Auto Close Tag：自动闭合标签Auto Rename Tag：自动重命名标签，配合上面的插件使用，基本上能赶上IntelliJ IDEA系的功能了Path Intellisense：文件路径提示补全 5、Vim 编辑器12345678为 React-JSX 设置 Vim：https://jaxbot.me/articles/setting-up-vim-for-react-js-jsx-02-03-2015License：开源支持平台：Mac、Linux# Vim 插件vim-jsx - 提供 JSX 的语法高亮和缩进。vim-react-snippets - 一组为 Vim 打造的可与Facebook 的 React 库一起使用的片段。vim-babel - 一组为 Vim 打造的可与Facebook 的 React 库一起使用的片段 6、GNU Emacs 编辑器1234567官网：https://www.gnu.org/software/emacs/官方文档：https://www.gnu.org/software/emacs/documentation.html针对 React Native 的初始设置：http://www.cyrusinnovation.com/initial-emacs-setup-for-reactreactnative/# 具有用于下载和安装扩展的包系统。GNU EMACS 是一个可扩展、可定制、免费、自由的文本编辑器。web-mode.el - 它是一个自主的 emacs 主模块，用于编辑 Web模板。它与许多语言兼容，包括 JSX（React） 7、Spacemacs 编辑器123456Spacemacs 是一个社区驱动的 Emacs 发行版 - 最好的编辑器既不是 Emacs 也不是Vim，它是 Emacs 和 Vim 相结合！React layer - 适用于 React 的 ES6 和 JSX 配置层。它将自动识别 .jsx 和 .react.js 文件。一个用于 React集成的包层。官网：http://spacemacs.org/Github 项目地址：syl20bnr/spacemacs(https://github.com/syl20bnr/spacemacs)官方文档：http://spacemacs.org/doc/DOCUMENTATION.html 8、 Deco IDE12345678Deco 是专为 React Native 打造的 IDE。它是一个用于编写 React Native 应用程序的一体化解决方案，无需任何环境设置即可下载和使用。Deco 专注于组件重用，并支持用户对 UI 的实时编辑，从而改进了React Native 开发工作流程。官网：https://www.decosoftware.com/Github 项目地址：decosoftware/deco-ide(https://github.com/decosoftware/deco-ide)官方文档：https://www.decosoftware.com/docs支持平台：Mac（仅适用于iOS） 9、 TextMate 编辑器1234567官网：https://macromates.com/官方文档：http://manual.macromates.com/en/License：收费（单个用户 License 为48.75欧元）支持平台：Mac# 插件javascript-jsx.tmbundle - 用于JSX（React）的 Textmate Bundle。目前支持语法高亮。 10、ReactXP123456是微软Skype团队维护的一个框架，不是微软整个公司贴React的屁股。ReactXP 的意思是 React Cross Platform。那如何跨端的呢？在 React 和 React Native 封装一个抽象层，也是一个子集，提供跨平台的 API。底层 iOS/Android 就是跑RN，Web 就是 React，Windows 10 及以上采用自家的 UWP，https://wapbaike.baidu.com/item/uwp/4236943适配 React Native，Windows 10 以下其他平台就用 Electron 把 Web 包起来……跨端了。看看目前的组件列表，相当的匮乏。 我的推荐 1、Sublime 2、webStorm]]></content>
+      <categories>
+        <category>React-Native</category>
+      </categories>
+      <tags>
+        <tag>iOS</tag>
+        <tag>Android</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Mac React-Native]]></title>
+    <url>%2F2018%2F06%2F02%2FMac-React-Native%2F</url>
+    <content type="text"><![CDATA[React-native 安装基础篇 RN官方文档 (0.55): http://facebook.github.io RN中文翻译文档 (0.51): https://reactnative.cn ES6(阮一峰) http://es6.ruanyifeng.com 以下基于MaxOS 一、安装工具 1、 安装 homebre 1/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" 2、然后 安装 node.js1brew install node 3、 配置node国内镜像1234567891011121314# 修改 下载仓库为淘宝镜像npm config set registry https://registry.npm.taobao.org --global#如果要发布自己的镜像需要修改回来#npm config set registry https://registry.npmjs.org/ npm config set disturl https://nodejs.org/dist/ --global#是否配置成功,请使用下面命令npm config get registrynpm config get disturl#查看npm全部配置npm config get 4、Yarn、React Native的命令行工具（react-native-cli） Yarn是Facebook提供的替代npm的工具，可以加速node模块的下载。React Native的命令行工具用于执行创建、初始化、更新项目、运行打包服务（packager）等任务。12345npm install -g yarn react-native-cli# 配置` Yarn `国内镜像yarn config set registry https://registry.npm.taobao.org --globalyarn config set disturl https://npm.taobao.org/dist --global 二、安装 RN 1、新建工程文件夹 并 cd 后，建立 /ios 文件夹(用于Xcode工程文件) https://reactnative.cn/docs/0.51/integration-with-existing-apps.html#content 2、在项目根目录下创建一个名为package.json的空文本文件 或者 npm init （这个工作跟cocoapods的podfile文件初始化有点像）-&gt; 根据提示输入工程的package.json的内容。 3、添加 yarn (react-native依赖管理工具)1234yarn add react-native# facebook.github.io/react-native/docs/image.html 看官网最新是哪个版本yarn add react@16.3.1 // 如果你已经安装过 node Yarn 就可以安装RN库，和 cocoPoads管理(pod 导入RN方式) 4、工程根目录 使用命令(这个会很慢很慢，取决你的网络) 1npm install 5、进入项目目录(我的是 ./ios/) ,如果你已经安装Cocoapods 了1pod install 6、react-native (跑 本地服务，方面实时用nodo.js去解析ES6的代码-&gt;main.bundle.js)123# 在React Native项目根目录下运行```shnpm start / react-native start 7、index.ios.js 生产可执行的文件(可被RN_server 找到) （作为测试用，真正开发需要 react-native bundle.........）1curl http://localhost:8081/index.ios.bundle -o main.jsbundle 6、123# 在React Native项目根目录下运行```shnpm start / react-native start 7、index.ios.js 生产可执行的main.jsbundle文件(可被RN_server 找到[也就是上面的6])一般是6启动后，修改了 js 的配置文件，需要执行下面的命令，编译js,变成可运行的jsbundle1curl http://localhost:8081/index.ios.bundle -o main.jsbundle 8、重新 启动RN服务问题 凡是遇到 终端命令错误等的问题，记得先 彻底关闭 终端，在去执行，可能就好了。 或者 12345678# 查看`React-Native服务运行进程`命令lsof -i:8081# 查询结果(node的PID)# COMMAND PID USER FD TYPE DEVICE SIZE/OFF NODE NAME# node 9753 srxboys 32u IPv6 0xd47... 0t0 TCP *:sproxyadmin (LISTEN)# 关掉进程(PID)kill -9 9753 编译项目 之前，一定要自测1、先 运行React Native(上面的第6步) 2、看看index.js是否有问题 (上面的 第7步) 3、你的 jsCodeLocation 是以何种方式 写的, 是否执行你的js (1)是 NSBundle 走Xcode的Copy Bundle resources里面找文件 xx.jsbundle (2) [NSURL filexxx] ，就是改 app 目录下里面找文件 xx.jsbundle (3) [NSURL urlWithxx] 很遗憾，这个不支持，可能RN觉得不安全 这个我们可以先下载xx.jsbundle, 然后执行 (2) 步【注意 安全保护处理】 三、 运行项目错误1、如果有用的文件，一定确保文件在 app 的目录里 2、确保js 文件正确(上面) 3、确保js 调用的RN库，你的项目RN都保函这些库(包括自带、第三方) 4、RN 以及 支持的第三方，Xcode编译通过 WARN eslint-plugin-react-native@3.2.1 requires a peer of eslint@^3.17.0 || ^4.0.0 but none is insta … package.json 文件追加 最后2行代码 12345678910... "dependencies": &#123; "react": "16.3.1", "react-native": "0.55.4", # 后面两行，看好上面`WARN`提示的版本号 "eslint": "^3.17.0", "eslint-plugin-react-native": "^3.2.1" ... &#125;,...]]></content>
+      <categories>
+        <category>React-Native</category>
+      </categories>
+      <tags>
+        <tag>iOS</tag>
+        <tag>Android</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[iOS用友盟统计干点实事]]></title>
+    <url>%2F2017%2F08%2F24%2FiOS%E7%94%A8%E5%8F%8B%E7%9B%9F%E7%BB%9F%E8%AE%A1%E5%B9%B2%E7%82%B9%E5%AE%9E%E4%BA%8B%2F</url>
+    <content type="text"><![CDATA[友盟统计 分析下 iOS、android 崩溃率iOS 8 - 24 错误总数 621次 活跃数11685 概率 621/11685 = 0.017 百分之2 8 - 23 百分之2 … 用户数：461290 8-24 用户活跃数 15610 8- 23 用户活跃数 14736 …- 2/百 概率 比较高，留存用户也在逐渐下降--目标为 n/千 android 8 - 24 错误总数 517次 百分之1.7 8 - 23 百分之1.8 … 用户数：861412 8-24 用户活跃数 13242 8- 23 用户活跃数 13015- 2/百 概率 比较高，留存用户也在逐渐下降--目标为 n/千 iOS 解决方案：采用热更新 Runtime (NSObject + method swizzling)具有针对性的 部分用户进行更新 ，并统计 得出效果。效果好，就全面推广。用户是感觉不到的。 那么问题来了: 1、代码的编写。在哪里比较合适？ 2、是不是所有代码都可以改。包括第三方SDK更新吗？？？？ 3、区分部分热更新统计、在全部热更新。版本号没有变。那么全部热更新后 之前的没有热更新的统计，又怎么区分。 4、总是热修复，也不是正确的解决方案，是不是我们代码在编写的健壮、review、测试 等,哪里做的不够、不细。 你有没有想过，你写的你认为可以完美的结合，但是安全呢！你的app，是怎么防止或者拒绝 入侵的。为什么JSPatch不允许热修复接入SDK，你就要接入。你又如何把控~。 如果以上，你都不能把控。那你只能用先用用第三方，看看源码。吃透了没准，你又有新的技术点。 还有 怎么绕过 苹果审核。如果2次都没有过呢！！！ (我的想法:不要盲目尝试, 先问问身边是否有做过，再去看看已经成熟，而又不被苹果 拒绝的第三平台开源代码)123456789一、lua热更新wax 二、js热更新`weex`(阿里)/ `RN`(FeceBook) ) / `JSPatch`(bang)不过滴滴打车的这个`DynamicCocoa`热更新库，目前处于封闭开发状态。虽然2017年前`JSPatch`是苹果打击对象。但不久`JSPatch`已经改为可控的了。 按照需求实现自己需要热更新 代码。从而都在你的掌握之中。 自己的代码可以和别人代码一样，但是一定是你所掌握的，所控制的，这是我个人一直也来所提倡的思想。 Android实现方案。由于笔者能力有限，不会那么多编程语言。上面iOS方案兼容这个2个平台。 下面是我个人歪歪的 (本故事村属虚构,如有雷同，算我复制你的)有一个人 GitHub id 为 probablycorey 开发了 wax (iOS热修复功能)，然后被多人修改。我只知道:1、阿里团队在进行二次修改。2、GitHub id mmin18 修改 那么是不是由于 HotPatch 在国内掀起了热潮，每个都写写，诶，写的不错的就被xxxxxx 这里都是思想到具体的某个点，没有扩散。其他的自己YY吧~！ ###上面说过的 用Lua脚本热修复的库 https://github.com/probablycorey/wax/ https://github.com/alibaba/wax https://github.com/mmin18/WaxPatch 用JS脚本热修复的库 weex -&gt; https://github.com/apache/incubator-weex react-native https://github.com/facebook/react-native RN几个开源项目 JSPatch -&gt; https://github.com/bang590/JSPatch DynamicCocoa -&gt; https://github.com/DynamicCocoa/DynamicCocoa]]></content>
+      <categories>
+        <category>Objective-C</category>
+      </categories>
+      <tags>
+        <tag>iOS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Runtime学习的必要性]]></title>
+    <url>%2F2017%2F08%2F24%2FRuntime%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%BF%85%E8%A6%81%E6%80%A7%2F</url>
+    <content type="text"><![CDATA[Runtime 学习的必要性1、创建对象(UIView等 、手势等)2、例如 UILabel 的样式、大小等等属性值如果自定义继承的xx???3、交换方法 method swizzling(方法 调和、搅拌) 近期学习并实践中 场景: 实现: 文献:http://blog.csdn.net/yiyaaixuexi/article/details/9374411]]></content>
+      <categories>
+        <category>Objective-C</category>
+      </categories>
+      <tags>
+        <tag>iOS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Next search]]></title>
+    <url>%2F2017%2F04%2F20%2FNext-search%2F</url>
+    <content type="text"><![CDATA[coding Next 样式配置http://theme-next.iissnan.com/ search 本地搜索:https://github.com/iissnan/hexo-theme-next/pull/694 http://theme-next.iissnan.com/third-party-services.html]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>Next</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hexo 搭建自己的博客]]></title>
+    <url>%2F2017%2F04%2F19%2Fhexo%2F</url>
+    <content type="text"><![CDATA[HexoHexo是一个开源的静态博客生成器,用node.js开发。 搭建博客的初衷每当自己(学习、coding)中，总会遇见问题，就Baidu、Google 看别人的讨论或者博客。其实写博客或者发表一个详细的技术点的时候，就是对于自己的沉淀和巩固。这是我所欠缺的，很多东西我都是需要实践来取证自己所知道知识。所以闲暇之余，我要养成写博客的习惯。(其实我是怕 说的技术点不够准确，或者有误区 希望大家来指正) 注:习惯用Mac 所以Shell命令行开头：$ 替换盘符：D:...Blog\Hexo[TOC] 一、准本工作：1、检查是否安装了Node.js 1234$ node -v#如果有版本号，说明你已经安装过了 (例如我的:`v6.10.2`)#Node更新等等操作，我想你会的。 2、安装软件 安装软件:(我个人在家用的是Win10) github.desktop： 安装这个会自动安装Git Shell这样我们就不用安装git了 node.js: Hexo是一款基于Node.js的静态博客框架，所以先安装Node.js。 安装Hexo1、新建 Blog 文件夹，我是放到了 D: ,根据个人情况。1D:\softwork\Blog\ 2、用淘宝镜像 安装Hexo12345#进入到相应的盘符和目标文件夹$ npm install -g hexo --registry=https://registry.npm.taobao.org注:我家里的网不好，翻墙后的网速也不可观，如果你的网络好的话，使用下面的:$ npm install hexo-cli -g 3、检测 Hexo 是否安装上123$ hexo#会出现一些命令说明的东西，那么你的Hexo就安装成功了 4、Hexo 初始化1234$ hexo init &lt;folder&gt;#例如:$ hexo init Hexo 5、可以浏览本地服务器生成的静态HTML12345678910$ cd .\Hexo\#安装NPM(NPM是随同NodeJS一起安装的包管理工具，能解决NodeJS代码部署上的很多问题)$ npm install# 生成静态页面$ hexo generate 或者 hexo g# 启动本地服务$ hexo serve 或者 hexo s 6、在GitHub上新建一个 new repository(新的存储库) (默认300M 这个应该够用了)注: Owner 一定是自己的账户名，不是organization(组织)名看了好多文章都说Repository name 都是xxx.github.io，这个github.io都是这么写。不这么写会有什么错误。我想说不会，但是我看过有不是以这个结尾的，如果你是新手，还是这么写吧！ 7、进入刚刚新建的 new repository 右边有个 Setting(1)配置 GitHub Pages (用于介绍托管在GitHub的项目)(2)Choose a theme 你部署完服务器，可以马上浏览的页面 GitHub上的工作就做完了，回到本地 8、用Notepad++配置 站点配置文件因为Win10记事本编写的中文生成的静态页不是标准的UTF-8，会导致乱码 ，所以用Notepad++ 编写。 设置 Notepad++ 自动换行功能 和 行宽 下面编写 站点配置文件1234567891011121314151617181920# Site#网站的标题title: srxboys#副标题subtitle: 说点什么好呢？#描述description: 22joke #作者信息author: srxboys#头像，图片位置在相应主题目录下的images#avatar: /images/avatar.pnglanguage: zh-Hansdeploy:#部署环境，基于hexo+githubpage,所以这里使用git。注意：不同版本的hexo，type有可能不同，3.x以后应使用git,具体参看官方文档 type: git#git仓库地址，替换成你的username即可，其他保持不变，后面会提到如何创建git仓库 repository: git@github.com:srxboys/srxboys.github.io.git branch: master repository : 的内容最好不要手动，GitHub有 copy 的SSH地址 最近发现 Atom 编写Mackdown,是比较不错的，还可以边写边看效果。12# 推荐插件Mackdown-preview 9、生成的静态页署到GitHub上1234567$ hexo clean# 生成静态页面$ hexo generate# 部署远程网站$ hexo deploy 10、hexo deploy 部署远程网站 错误12345$ hexo deployERROR Deployer not found:#补救方法：$ npm install hexo-deployer-git --save 其他注意事项:配置信息文件属性：空格 &lt;相应的值&gt; —&gt; 这里要一定注意 冒号后面要有个 空格,避免在 generate 时出错 over ! over ! over !]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+</search>
