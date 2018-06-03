@@ -120,7 +120,7 @@
 <meta property="og:site_name" content="srxboys">
 <meta property="og:description" content="热更新/热修复(调研的可能不全) 热更新  1、  Flutter    由于渲染的基础（gdi）是自己实现的，所以实现跨平台、性能优化、摆脱平台约束方面的裕度更大。从实际体验来看， Flutter 的性能比 RN 要高不少。优点可能是性能，但由于它完全自定义了一套 ui 系统，这也是它的限制。热更新可使用code-push。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-06-03T14:32:42.445Z">
+<meta property="og:updated_time" content="2018-06-03T15:37:57.652Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="热更新方案">
 <meta name="twitter:description" content="热更新/热修复(调研的可能不全) 热更新  1、  Flutter    由于渲染的基础（gdi）是自己实现的，所以实现跨平台、性能优化、摆脱平台约束方面的裕度更大。从实际体验来看， Flutter 的性能比 RN 要高不少。优点可能是性能，但由于它完全自定义了一套 ui 系统，这也是它的限制。热更新可使用code-push。">
@@ -396,7 +396,7 @@
                 
               
 
-              <time title="创建时间：2018-06-03 01:09:34 / 修改时间：22:32:42" itemprop="dateCreated datePublished" datetime="2018-06-03T01:09:34+08:00">2018-06-03</time>
+              <time title="创建时间：2018-06-03 01:09:34 / 修改时间：23:37:57" itemprop="dateCreated datePublished" datetime="2018-06-03T01:09:34+08:00">2018-06-03</time>
             
 
             
@@ -521,9 +521,9 @@
 <blockquote>
 <p>未开放 <br></p>
 <ul>
-<li>1、<a href="https://github.com/DynamicCocoa/DynamicCocoa" target="_blank" rel="noopener">  DynamicCocoa  </a> 编译阶段入手，通过 clang 把 OC 代码编译成自己定制的 JS 格式，再动态下发去执行，做到原生开发，动态运行，主打动态添加功能，当然顺便把修 bug 也给支持了。准备在2017年初开源，但至今没有消息。  <br></li>
-<li>2、<code>TPatch</code> QQ空间终端开发团队，目前不开放。 <br></li>
-<li>3、<code>OCScript</code> <br></li>
+<li>1、<a href="https://github.com/DynamicCocoa/DynamicCocoa" target="_blank" rel="noopener">  DynamicCocoa  </a> 滴滴 编译阶段入手，通过 clang 把 OC 代码编译成自己定制的 JS 格式，再动态下发去执行，做到原生开发，动态运行，主打动态添加功能，当然顺便把修 bug 也给支持了。准备在2017年初开源，但至今没有消息。  </li>
+<li>2、<code>TPatch</code>  </li>
+<li>3、<code>OCScript</code></li>
 <li>4、<code>Hybrid</code> 主流的Android平台包括PhoneGap，AppCan，appMobi，Titanium等， iOS 类似的 <a href="https://github.com/marcuswestin/WebViewJavascriptBridge" target="_blank" rel="noopener">WebViewJavascriptBridge</a></li>
 </ul>
 </blockquote>
@@ -536,7 +536,7 @@
 <li>2、<a href="https://github.com/mmin18/WaxPatch" target="_blank" rel="noopener">   WaxPatch  </a>  或者  <a href="https://github.com/mmin18" target="_blank" rel="noopener"><code>mmin18(个人)</code></a>  </li>
 <li>3、<a href="https://github.com/probablycorey/wax" target="_blank" rel="noopener">    wax   </a> 后被Alibaba收购， 使用 Lua, 支持iOS<blockquote>
 <ul>
-<li>首先是 wax 已经多年不维护了，导致不支持一些 block/64 位等新特性，此外当时 wax 还有文档不足，测试不足，线程不安全，难以调试等坑。</li>
+<li>首先是 wax 已经多年不维护了，导致不支持一些 block/64 位等新特性，此外当时 wax 还有文档不足，测试不足，线程不安全，难以调试等。</li>
 </ul>
 </blockquote>
 </li>
@@ -557,17 +557,17 @@
 </li>
 <li>2、<a href="https://rollout.io/" target="_blank" rel="noopener">  rollout  </a><blockquote>
 <ul>
-<li>(需要翻墙)国外一个热补丁服务叫 rollout (<a href="http://rollout.io)。" target="_blank" rel="noopener">http://rollout.io)。</a> 它是一个服务平台，底层也是用 JS 调用和替换 OC 方法去实时修复 bug，不过它不是开源的，只能在这个平台上用，另外它的 JS 写法是比较复杂的，导致它不得不在平台上做一些便捷的功能，把一些常用的操作封装起来，减少使用者写代码。来源文章:<a href="https://www.cnblogs.com/bugly/p/5740812.html" target="_blank" rel="noopener">https://www.cnblogs.com/bugly/p/5740812.html</a> <br></li>
+<li>(需要翻墙)国外一个热补丁服务叫 rollout (<a href="http://rollout.io)。" target="_blank" rel="noopener">http://rollout.io)。</a> 它是一个服务平台，底层也是用 JS 调用和替换 OC 方法去实时修复 bug，不过它不是开源的，只能在这个平台上用，另外它的 JS 写法是比较复杂的，导致它不得不在平台上做一些便捷的功能，把一些常用的操作封装起来，减少使用者写代码。来源文章:<a href="https://www.cnblogs.com/bugly/p/5740812.html" target="_blank" rel="noopener">https://www.cnblogs.com/bugly/p/5740812.html</a></li>
 </ul>
 </blockquote>
 </li>
 <li>3、<a href="https://github.com/Tencent/xLua" target="_blank" rel="noopener">  xLua  </a><blockquote>
 <ul>
-<li>腾讯(好像 是对游戏类app 比较好些) 平时开发用c#，需要热更新时用lua来更新对应的函数 <br></li>
+<li>腾讯 平时开发用c#，需要热更新时用lua来更新对应的函数<br><br></li>
 </ul>
 </blockquote>
 </li>
-<li>4、<a href="https://github.com/MonoCross/MonoCross" target="_blank" rel="noopener">  MonoCross   </a> <br><br></li>
+<li>4、<a href="https://github.com/MonoCross/MonoCross" target="_blank" rel="noopener">  MonoCross   </a><br><br></li>
 <li>5、<a href="http://microsoft.github.io/code-push/" target="_blank" rel="noopener">  CodePush  </a><blockquote>
 <ul>
 <li>是由微软提供的热更新服务。热更新可以使你绕过AppStore的审核机制，直接修改已经上架的应用。对于国内用户，我们也推荐由本网站提供的<a href="https://pushy.me" target="_blank" rel="noopener">Pushy</a>热更新服务，相比CodePush来说，提供了全中文的文档和技术支持，服务器部署在国内速度更快，还提供了全自动的差量更新方式，大幅节约更新流量，欢迎朋友们试用和反馈意见 <br></li>
@@ -592,7 +592,7 @@
 <li>腾讯的内部方案KKFix  </li>
 <li>Qzone的超级补丁    </li>
 <li>大众点评的nuwa     </li>
-<li>百度金融的rocooFix </li>
+<li>百度金融的rocooFix</li>
 <li>饿了么的amigo        </li>
 <li>美团的robust      </li>
 </ul>

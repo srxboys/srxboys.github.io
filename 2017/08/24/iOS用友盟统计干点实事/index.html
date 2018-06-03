@@ -120,7 +120,7 @@
 <meta property="og:site_name" content="srxboys">
 <meta property="og:description" content="友盟统计 分析下 iOS、android 崩溃率iOS 8 - 24  错误总数  621次   活跃数11685   概率  621/11685 = 0.017      百分之2 8 - 23   百分之2 …">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-06-02T12:23:52.563Z">
+<meta property="og:updated_time" content="2018-06-03T15:30:00.083Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="iOS用友盟统计干点实事">
 <meta name="twitter:description" content="友盟统计 分析下 iOS、android 崩溃率iOS 8 - 24  错误总数  621次   活跃数11685   概率  621/11685 = 0.017      百分之2 8 - 23   百分之2 …">
@@ -413,7 +413,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-06-02 20:23:52" itemprop="dateModified" datetime="2018-06-02T20:23:52+08:00">2018-06-02</time>
+                <time title="修改时间：2018-06-03 23:30:00" itemprop="dateModified" datetime="2018-06-03T23:30:00+08:00">2018-06-03</time>
               
             
           </span>
@@ -510,27 +510,20 @@
 <li><code>2/百</code> 概率 比较高，留存用户也在逐渐下降<br>-<br>-目标为 <code>n/千</code></li>
 </ul>
 <hr>
-<h2 id="iOS-解决方案："><a href="#iOS-解决方案：" class="headerlink" title="iOS 解决方案："></a>iOS 解决方案：</h2><h3 id="采用热更新-Runtime-NSObject-method-swizzling"><a href="#采用热更新-Runtime-NSObject-method-swizzling" class="headerlink" title="采用热更新  Runtime   (NSObject + method swizzling)"></a>采用热更新  Runtime   (NSObject + method swizzling)</h3><p>具有针对性的 部分用户进行更新 ，并统计 得出效果。效果好，就全面推广。用户是感觉不到的。</p>
+<h2 id="iOS-解决方案："><a href="#iOS-解决方案：" class="headerlink" title="iOS 解决方案："></a>iOS 解决方案：</h2><h3 id="采用热更新-NSObject-method-swizzling-JS-Lua-…"><a href="#采用热更新-NSObject-method-swizzling-JS-Lua-…" class="headerlink" title="采用热更新   (NSObject + method swizzling + JS/Lua/… )"></a>采用热更新   (NSObject + method swizzling + JS/Lua/… )</h3><p>具有针对性的 部分用户进行更新 ，并统计 得出效果。效果好，就全面推广。用户是感觉不到的。</p>
 <h3 id="那么问题来了"><a href="#那么问题来了" class="headerlink" title="那么问题来了:"></a>那么问题来了:</h3><ul>
 <li>1、代码的编写。在哪里比较合适？</li>
 <li>2、是不是所有代码都可以改。包括第三方SDK更新吗？？？？</li>
 <li>3、区分部分热更新统计、在全部热更新。版本号没有变。那么全部热更新后 之前的没有热更新的统计，又怎么区分。</li>
-<li>4、总是热修复，也不是正确的解决方案，是不是我们代码在编写的<code>健壮</code>、<code>review</code>、<code>测试</code> 等,哪里做的不够、不细。</li>
+<li>4、热更新安全把控</li>
+<li>5、顺利通过<code>苹果审核</code></li>
+<li>6、总是热修复，也不是正确的解决方案，是不是我们代码在编写的<code>健壮</code>、<code>review</code>、<code>测试</code> 等,哪里做的不够、不细。</li>
 </ul>
 <blockquote>
-<p>你有没有想过，你写的你认为可以完美的结合，但是安全呢！<br>你的app，是怎么防止或者拒绝 入侵的。<br>为什么<code>JSPatch</code>不允许<code>热修复接入SDK</code>，你就要接入。你又如何把控~。</p>
-<p>如果以上，你都不能把控。那你只能用先用用第三方，看看源码。吃透了没准，你又有新的技术点。</p>
+<p>如果以上，你都不能把控。那你只能用先用用第三方，看看源码。吃透了 你又有新的技术点。</p>
 </blockquote>
-<p>还有 怎么绕过 苹果审核。如果2次都没有过呢！！！  (我的想法:不要盲目尝试,  先问问身边是否有做过，再去看看已经成熟，而又<code>不被</code>苹果 拒绝的第三平台<code>开源代码</code>)<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">一、lua热更新</span><br><span class="line">wax   </span><br><span class="line"></span><br><span class="line">二、js热更新</span><br><span class="line">`weex`(阿里)/ `RN`(FeceBook) ) / `JSPatch`(bang)</span><br><span class="line"></span><br><span class="line">不过滴滴打车的这个`DynamicCocoa`热更新库，目前处于封闭开发状态。</span><br><span class="line"></span><br><span class="line">虽然2017年前`JSPatch`是苹果打击对象。但不久`JSPatch`已经改为可控的了。</span><br></pre></td></tr></table></figure></p>
-<p>按照需求实现自己需要热更新 代码。从而都在你的掌握之中。</p>
-<p>自己的代码可以和别人代码一样，但是一定是你所掌握的，所控制的，这是我个人一直也来所提倡的思想。</p>
 <hr>
-<h3 id="Android实现方案。"><a href="#Android实现方案。" class="headerlink" title="Android实现方案。"></a>Android实现方案。</h3><p>由于笔者能力有限，不会那么多编程语言。上面<code>iOS方案</code>兼容这个2个平台。</p>
-<hr>
-<h3 id="下面是我个人歪歪的-本故事村属虚构-如有雷同，算我复制你的"><a href="#下面是我个人歪歪的-本故事村属虚构-如有雷同，算我复制你的" class="headerlink" title="下面是我个人歪歪的 (本故事村属虚构,如有雷同，算我复制你的)"></a>下面是我<code>个人歪歪</code>的 (本故事村属虚构,如有雷同，算我复制你的)</h3><p>有一个人 GitHub id 为 <code>probablycorey</code> 开发了 <code>wax</code> (iOS热修复功能)，然后被多人修改。<br>我只知道:<br>1、<code>阿里团队</code>在进行二次修改。<br>2、GitHub id <code>mmin18</code> 修改</p>
-<p>那么是不是由于 HotPatch 在国内掀起了热潮，每个都写写，诶，写的不错的就被xxxxxx</p>
-<hr>
-<h4 id="这里都是思想到具体的某个点，没有扩散。其他的自己YY吧-！"><a href="#这里都是思想到具体的某个点，没有扩散。其他的自己YY吧-！" class="headerlink" title="这里都是思想到具体的某个点，没有扩散。其他的自己YY吧~！"></a>这里都是思想到具体的某个点，没有扩散。其他的自己YY吧~！</h4><hr>
+<h3 id="我搜集的热更新方案"><a href="#我搜集的热更新方案" class="headerlink" title=" 我搜集的热更新方案 "></a><a href="https://srxboys.github.io/2018/06/03/热更新方案"><em> 我搜集的热更新方案 </em></a></h3><hr>
 <p>###上面说过的</p>
 <blockquote>
 <p>用Lua脚本热修复的库</p>
@@ -544,7 +537,7 @@
 <p>用JS脚本热修复的库</p>
 <ul>
 <li>weex -&gt;  <a href="https://github.com/apache/incubator-weex" target="_blank" rel="noopener">https://github.com/apache/incubator-weex</a></li>
-<li>react-native <a href="https://github.com/facebook/react-native" target="_blank" rel="noopener">https://github.com/facebook/react-native</a>  <a href="http://www.cnblogs.com/qiangxia/p/5584622.html" target="_blank" rel="noopener"><code>RN几个开源项目</code></a></li>
+<li>react-native <a href="https://github.com/facebook/react-native" target="_blank" rel="noopener">https://github.com/facebook/react-native</a></li>
 <li>JSPatch -&gt; <a href="https://github.com/bang590/JSPatch" target="_blank" rel="noopener">https://github.com/bang590/JSPatch</a></li>
 <li><del> DynamicCocoa -&gt; <a href="https://github.com/DynamicCocoa/DynamicCocoa" target="_blank" rel="noopener">https://github.com/DynamicCocoa/DynamicCocoa</a> <del></del></del></li>
 </ul>
@@ -809,7 +802,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#友盟统计-分析下-iOS、android-崩溃率"><span class="nav-number">1.</span> <span class="nav-text">友盟统计 分析下 iOS、android 崩溃率</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#iOS"><span class="nav-number">1.1.</span> <span class="nav-text">iOS</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#用户数：461290"><span class="nav-number">1.1.1.</span> <span class="nav-text">用户数：461290</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#android"><span class="nav-number">1.2.</span> <span class="nav-text">android</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#用户数：861412"><span class="nav-number">1.2.1.</span> <span class="nav-text">用户数：861412</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#iOS-解决方案："><span class="nav-number">2.</span> <span class="nav-text">iOS 解决方案：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#采用热更新-Runtime-NSObject-method-swizzling"><span class="nav-number">2.1.</span> <span class="nav-text">采用热更新  Runtime   (NSObject + method swizzling)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#那么问题来了"><span class="nav-number">2.2.</span> <span class="nav-text">那么问题来了:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Android实现方案。"><span class="nav-number">2.3.</span> <span class="nav-text">Android实现方案。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#下面是我个人歪歪的-本故事村属虚构-如有雷同，算我复制你的"><span class="nav-number">2.4.</span> <span class="nav-text">下面是我个人歪歪的 (本故事村属虚构,如有雷同，算我复制你的)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#这里都是思想到具体的某个点，没有扩散。其他的自己YY吧-！"><span class="nav-number">2.4.1.</span> <span class="nav-text">这里都是思想到具体的某个点，没有扩散。其他的自己YY吧~！</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#友盟统计-分析下-iOS、android-崩溃率"><span class="nav-number">1.</span> <span class="nav-text">友盟统计 分析下 iOS、android 崩溃率</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#iOS"><span class="nav-number">1.1.</span> <span class="nav-text">iOS</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#用户数：461290"><span class="nav-number">1.1.1.</span> <span class="nav-text">用户数：461290</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#android"><span class="nav-number">1.2.</span> <span class="nav-text">android</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#用户数：861412"><span class="nav-number">1.2.1.</span> <span class="nav-text">用户数：861412</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#iOS-解决方案："><span class="nav-number">2.</span> <span class="nav-text">iOS 解决方案：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#采用热更新-NSObject-method-swizzling-JS-Lua-…"><span class="nav-number">2.1.</span> <span class="nav-text">采用热更新   (NSObject + method swizzling + JS/Lua/… )</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#那么问题来了"><span class="nav-number">2.2.</span> <span class="nav-text">那么问题来了:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#我搜集的热更新方案"><span class="nav-number">2.3.</span> <span class="nav-text"> 我搜集的热更新方案 </span></a></li></ol></li></ol></div>
             
 
           </div>
