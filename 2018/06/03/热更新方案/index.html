@@ -120,7 +120,7 @@
 <meta property="og:site_name" content="srxboys">
 <meta property="og:description" content="热更新/热修复(调研的可能不全) 热更新  1、  Flutter    由于渲染的基础（gdi）是自己实现的，所以实现跨平台、性能优化、摆脱平台约束方面的裕度更大。从实际体验来看， Flutter 的性能比 RN 要高不少。优点可能是性能，但由于它完全自定义了一套 ui 系统，这也是它的限制。热更新可使用code-push。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-06-02T18:22:09.063Z">
+<meta property="og:updated_time" content="2018-06-03T14:32:42.445Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="热更新方案">
 <meta name="twitter:description" content="热更新/热修复(调研的可能不全) 热更新  1、  Flutter    由于渲染的基础（gdi）是自己实现的，所以实现跨平台、性能优化、摆脱平台约束方面的裕度更大。从实际体验来看， Flutter 的性能比 RN 要高不少。优点可能是性能，但由于它完全自定义了一套 ui 系统，这也是它的限制。热更新可使用code-push。">
@@ -396,7 +396,7 @@
                 
               
 
-              <time title="创建时间：2018-06-03 01:09:34 / 修改时间：02:22:09" itemprop="dateCreated datePublished" datetime="2018-06-03T01:09:34+08:00">2018-06-03</time>
+              <time title="创建时间：2018-06-03 01:09:34 / 修改时间：22:32:42" itemprop="dateCreated datePublished" datetime="2018-06-03T01:09:34+08:00">2018-06-03</time>
             
 
             
@@ -533,10 +533,9 @@
 </blockquote>
 <ul>
 <li>1、<a href="https://github.com/jarjin/uLua" target="_blank" rel="noopener">  ulua  </a>   C#  </li>
-<li>2、<a href="https://github.com/mmin18/WaxPatch" target="_blank" rel="noopener">   WaxPatch  </a>  <blockquote>
+<li>2、<a href="https://github.com/mmin18/WaxPatch" target="_blank" rel="noopener">   WaxPatch  </a>  或者  <a href="https://github.com/mmin18" target="_blank" rel="noopener"><code>mmin18(个人)</code></a>  </li>
+<li>3、<a href="https://github.com/probablycorey/wax" target="_blank" rel="noopener">    wax   </a> 后被Alibaba收购， 使用 Lua, 支持iOS<blockquote>
 <ul>
-<li><a href="https://github.com/mmin18" target="_blank" rel="noopener"><code>mmin18(个人)</code></a>  </li>
-<li><a href="https://github.com/probablycorey/wax" target="_blank" rel="noopener">    wax   </a> 后被Alibaba收购， 使用 Lua, 支持iOS</li>
 <li>首先是 wax 已经多年不维护了，导致不支持一些 block/64 位等新特性，此外当时 wax 还有文档不足，测试不足，线程不安全，难以调试等坑。</li>
 </ul>
 </blockquote>
@@ -548,7 +547,11 @@
 <ul>
 <li>1、<a href="https://github.com/bang590/JSPatch" target="_blank" rel="noopener">  JSPatch  </a><blockquote>
 <ul>
-<li><a href="http://blog.cnbang.net/archives/" target="_blank" rel="noopener">bang 陈振焯</a>  &nbsp;&nbsp; 访谈:<a href="http://www.infoq.com/cn/articles/jspatch-opensource" target="_blank" rel="noopener">http://www.infoq.com/cn/articles/jspatch-opensource</a> <br></li>
+<li><a href="http://blog.cnbang.net/archives/" target="_blank" rel="noopener">bang 陈振焯</a></li>
+<li><ul>
+<li>访谈:<a href="http://www.infoq.com/cn/articles/jspatch-opensource" target="_blank" rel="noopener">http://www.infoq.com/cn/articles/jspatch-opensource</a> <br></li>
+</ul>
+</li>
 </ul>
 </blockquote>
 </li>
@@ -574,8 +577,27 @@
 </ul>
 <p><br><br><br></p>
 <hr>
-<h2 id="意外资料"><a href="#意外资料" class="headerlink" title="意外资料"></a>意外资料</h2><p><a href="https://github.com/pangweiwei/slua" target="_blank" rel="noopener">     slua    </a>   【Unity3D and mono 】  <br><br>作者文章：<a href="https://www.jianshu.com/p/481994e8b7df" target="_blank" rel="noopener">https://www.jianshu.com/p/481994e8b7df</a> <br></p>
-<p>// Android java <br><br>微信Tinker  <br><br>阿里 Andfix <br><br>腾讯的内部方案KKFix <br><br>Qzone的超级补丁、   <br><br>大众点评的nuwa、     <br><br>百度金融的rocooFix,  <br><br>饿了么的amigo           <br><br>美团的robust              <br></p>
+<h2 id="其他资料"><a href="#其他资料" class="headerlink" title="其他资料"></a>其他资料</h2><blockquote>
+<p><a href="https://github.com/pangweiwei/slua" target="_blank" rel="noopener">     slua    </a>   【Unity3D and mono 】  <br></p>
+<ul>
+<li>作者文章：<a href="https://www.jianshu.com/p/481994e8b7df" target="_blank" rel="noopener">https://www.jianshu.com/p/481994e8b7df</a></li>
+</ul>
+</blockquote>
+<p><br></p>
+<blockquote>
+<p>Android java</p>
+<ul>
+<li>微信Tinker  </li>
+<li>阿里 Andfix</li>
+<li>腾讯的内部方案KKFix  </li>
+<li>Qzone的超级补丁    </li>
+<li>大众点评的nuwa     </li>
+<li>百度金融的rocooFix </li>
+<li>饿了么的amigo        </li>
+<li>美团的robust      </li>
+</ul>
+</blockquote>
+<p><br><br><br></p>
 
       
     </div>
@@ -746,7 +768,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">7</span>
+                    <span class="site-state-item-count">6</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -784,9 +806,7 @@
                     
                       
                     
-                      
-                    
-                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -836,7 +856,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#热更新-热修复-调研的可能不全"><span class="nav-number">1.</span> <span class="nav-text">热更新/热修复(调研的可能不全)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#热更新"><span class="nav-number">1.1.</span> <span class="nav-text">热更新</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#热修复"><span class="nav-number">1.2.</span> <span class="nav-text">热修复</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#意外资料"><span class="nav-number">1.3.</span> <span class="nav-text">意外资料</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#热更新-热修复-调研的可能不全"><span class="nav-number">1.</span> <span class="nav-text">热更新/热修复(调研的可能不全)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#热更新"><span class="nav-number">1.1.</span> <span class="nav-text">热更新</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#热修复"><span class="nav-number">1.2.</span> <span class="nav-text">热修复</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其他资料"><span class="nav-number">1.3.</span> <span class="nav-text">其他资料</span></a></li></ol></li></ol></div>
             
 
           </div>
