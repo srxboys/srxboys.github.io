@@ -1,4 +1,4 @@
-﻿---
+---
 title: Hexo 搭建自己的博客
 date: 2017-04-19 20:45:14
 categories: "Hexo" #哪个分类下
@@ -15,8 +15,6 @@ Hexo是一个开源的静态博客生成器,用node.js开发。
 <!--more-->
 
 ------
-
-#### 注:习惯用Mac  所以`Shell`命令行开头：`$ ` 替换盘符：`D:...Blog\Hexo`
 
 [TOC]
 
