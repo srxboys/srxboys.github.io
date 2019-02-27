@@ -112,18 +112,18 @@
 
 
 
-  <meta name="description" content="热更新/热修复(调研的可能不全) 热更新  1、  Flutter    由于渲染的基础（gdi）是自己实现的，所以实现跨平台、性能优化、摆脱平台约束方面的裕度更大。从实际体验来看， Flutter 的性能比 RN 要高不少。优点可能是性能，但由于它完全自定义了一套 ui 系统，这也是它的限制。">
+  <meta name="description" content="热更新/热修复(调研的可能不全) 热更新  1、  Flutter    由于渲染的基础（gdi）是自己实现的，所以实现跨平台、性能优化、摆脱平台约束方面的裕度更大。从实际体验来看， Flutter 的性能比 RN 要高不少。优点可能是性能，但由于它完全自定义了一套 ui 系统，这也是它的限制。 目前只有dev时进行hot reload。release后是不支持这种特性的。期待热更新功能。">
 <meta name="keywords" content="iOS,Android">
 <meta property="og:type" content="article">
 <meta property="og:title" content="热更新方案">
 <meta property="og:url" content="https://srxboys.github.io/2018/06/03/热更新方案/index.html">
 <meta property="og:site_name" content="srxboys">
-<meta property="og:description" content="热更新/热修复(调研的可能不全) 热更新  1、  Flutter    由于渲染的基础（gdi）是自己实现的，所以实现跨平台、性能优化、摆脱平台约束方面的裕度更大。从实际体验来看， Flutter 的性能比 RN 要高不少。优点可能是性能，但由于它完全自定义了一套 ui 系统，这也是它的限制。">
+<meta property="og:description" content="热更新/热修复(调研的可能不全) 热更新  1、  Flutter    由于渲染的基础（gdi）是自己实现的，所以实现跨平台、性能优化、摆脱平台约束方面的裕度更大。从实际体验来看， Flutter 的性能比 RN 要高不少。优点可能是性能，但由于它完全自定义了一套 ui 系统，这也是它的限制。 目前只有dev时进行hot reload。release后是不支持这种特性的。期待热更新功能。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-02-27T02:32:07.257Z">
+<meta property="og:updated_time" content="2019-02-27T02:38:09.176Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="热更新方案">
-<meta name="twitter:description" content="热更新/热修复(调研的可能不全) 热更新  1、  Flutter    由于渲染的基础（gdi）是自己实现的，所以实现跨平台、性能优化、摆脱平台约束方面的裕度更大。从实际体验来看， Flutter 的性能比 RN 要高不少。优点可能是性能，但由于它完全自定义了一套 ui 系统，这也是它的限制。">
+<meta name="twitter:description" content="热更新/热修复(调研的可能不全) 热更新  1、  Flutter    由于渲染的基础（gdi）是自己实现的，所以实现跨平台、性能优化、摆脱平台约束方面的裕度更大。从实际体验来看， Flutter 的性能比 RN 要高不少。优点可能是性能，但由于它完全自定义了一套 ui 系统，这也是它的限制。 目前只有dev时进行hot reload。release后是不支持这种特性的。期待热更新功能。">
 
 
 
@@ -413,7 +413,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-02-27 10:32:07" itemprop="dateModified" datetime="2019-02-27T10:32:07+08:00">2019-02-27</time>
+                <time title="修改时间：2019-02-27 10:38:09" itemprop="dateModified" datetime="2019-02-27T10:38:09+08:00">2019-02-27</time>
               
             
           </span>
@@ -492,6 +492,7 @@
 <li>1、<a href="https://flutter.io" target="_blank" rel="noopener"><em>  Flutter  </em></a><blockquote>
 <ul>
 <li>由于渲染的基础（gdi）是自己实现的，所以实现跨平台、性能优化、摆脱平台约束方面的裕度更大。从实际体验来看， Flutter 的性能比 RN 要高不少。优点可能是性能，但由于它完全自定义了一套 ui 系统，这也是它的限制。</li>
+<li>目前只有dev时进行<code>hot reload</code>。release后是不支持这种特性的。期待热更新功能。</li>
 </ul>
 </blockquote>
 </li>
@@ -501,13 +502,13 @@
 <li>2、<a href="https://github.com/facebook/react-native" target="_blank" rel="noopener"><em>   React-native   </em></a><blockquote>
 <ul>
 <li>(简称RN)是<code>Facebook</code>于2015年4月开源<br>支持如下移动操作系统：iOS, Android,ubuntu phone os, Blackberry, Windows Phone(UWP), Palm WebOS, Bada 和 Symbian… 。</li>
-<li><code>热更新</code>可使用<a href="https://github.com/Microsoft/react-native-code-push" target="_blank" rel="noopener">code-push</a> &nbsp; (中文codepush <a href="https://github.com/lisong/code-push-demo-app)。" target="_blank" rel="noopener">https://github.com/lisong/code-push-demo-app)。</a></li>
+<li><code>热更新</code>可使用<a href="https://github.com/Microsoft/react-native-code-push" target="_blank" rel="noopener">code-push</a> &nbsp; <a href="https://github.com/lisong/code-push-server" target="_blank" rel="noopener">中文-搭建分发服务器 code-push</a>。<br><br></li>
 </ul>
 </blockquote>
 </li>
 <li>3、<a href="http://cordova.apache.org" target="_blank" rel="noopener"><em>   Cordova   </em></a><blockquote>
 <ul>
-<li>是贡献给<code>Apache</code>后的开源项目，是从PhoneGap中抽出的核心代码，是驱动PhoneGap的核心引擎。你可以把它们的关系想象成类似于Webkit和Google Chrome的关系 。<br>支持如下移动操作系统：iOS, Android,ubuntu phone os, Blackberry, Windows Phone, Palm WebOS, Bada 和 Symbian。</li>
+<li>是贡献给<code>Apache</code>后的开源项目，是从PhoneGap中抽出的核心代码，是驱动PhoneGap的核心引擎。你可以把它们的关系想象成类似于Webkit和Google Chrome的关系 。<br>支持如下移动操作系统：iOS, Android,ubuntu phone os, Blackberry, Windows Phone, Palm WebOS, Bada 和 Symbian。<br><br></li>
 </ul>
 </blockquote>
 </li>
@@ -823,7 +824,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">6</span>
+                    <span class="site-state-item-count">5</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
